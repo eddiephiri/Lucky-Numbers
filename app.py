@@ -13,7 +13,14 @@ if __name__ == '__main__':
     from modules.Numgenerator import draw
     from modules.Gentickets import generate as gen
     from modules.Checktickets import check
-    from modules.Display import results 
+    from modules.Display import result
+
+    draws = draw()
+    
+    won = check(draws, gen())
+
+    result(gen(), draws, won)
+    
 else:
     print("Imported as a module!")
     

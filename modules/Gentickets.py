@@ -3,7 +3,7 @@ def generate():
     """ Generates random tickets. Returns a list of tickets generated."""
 
     numTickets = int(input("Enter the number of tickets you wish to generate: "))
-    myrange = [x for x in range(1,40)]
+    myrange = [x for x in range(1,49)]
     ticket = []
     lot = []
 
@@ -21,6 +21,6 @@ def generate():
 
 
 if __name__ == '__main__':
+    pass
+else:
     import random
-
-    generate()
