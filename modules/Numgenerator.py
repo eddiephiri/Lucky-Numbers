@@ -1,3 +1,5 @@
+import random
+
 
 def draw():
     """ Generates  35 numbers between 1 to 48 inclusive. This is the list of
@@ -15,9 +17,6 @@ def draw():
     return set(picked)
 
 
-
-
 if __name__ == '__main__':
     pass
-else:
-    import random
+
