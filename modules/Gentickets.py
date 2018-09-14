@@ -1,16 +1,17 @@
+import random
+
 
 def generate():
     """ Generates random tickets. Returns a list of tickets generated."""
 
-    numTickets = int(input("Enter the number of tickets you wish to generate: "))
-    myrange = [x for x in range(1,40)]
-    ticket = []
+    num_tickets = int(input("Enter the number of tickets you (first) wish to generate: "))
+    my_range = [x for x in range(1,49)]
     lot = []
 
-    for i in  range(numTickets):
+    for i in range(num_tickets):
         ticket = []
         while len(ticket) < 6:
-            x = random.choice(myrange)
+            x = random.choice(my_range)
             if x in ticket:
                 continue
             else:
@@ -19,8 +20,6 @@ def generate():
     return lot
 
 
-
 if __name__ == '__main__':
-    import random
+    pass
 
-    generate()

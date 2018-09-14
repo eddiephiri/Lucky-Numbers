@@ -1,4 +1,4 @@
-####**************************** LUCKY NUMBERS *********************************
+# **************************** LUCKY NUMBERS *********************************
 #   Program simulates the lucky number game
 #   This is a game were there are a total of 48 balls.
 #   You are to pick six (6) numbers from this range
@@ -7,13 +7,19 @@
 #   Your ticket fails if you pick one not chosen by the random picker
 
 
-
-
 if __name__ == '__main__':
     from modules.Numgenerator import draw
     from modules.Gentickets import generate as gen
     from modules.Checktickets import check
-    from modules.Display import results 
+    from modules.Display import result
+
+    d = draw()
+    
+    won = check(d, gen())
+
+    result(gen(), d, won)
+    
 else:
     print("Imported as a module!")
-    
+
+

@@ -1,12 +1,13 @@
 
 
         
-def check(numPicked, ticketPool):
-    """ Requires two arguments - List of numbers picked and list of tickets
-        generated. Returns number of tickets that have won """
+def check(mylist, pool):
+    """ Requires two arguments - List of numbers picked [mylist] and list of tickets
+        generated [pool]. Returns number of tickets that have won """
+    won = 0
 
-    for ticket in ticketPool:
-        if ticket.issubset(numPicked):
+    for ticket in pool:
+        if ticket.issubset(mylist):
             won += 1
         else:
             continue
@@ -17,7 +18,7 @@ def check(numPicked, ticketPool):
 
 
 if __name__ == '__main__':
-    check(numPicked, ticketPool)
+    check(list, pool)
 
 
     

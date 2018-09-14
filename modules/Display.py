@@ -11,7 +11,7 @@ def result(ticketPool, numPicked, won):
 
     print("Tickets made are as follows: \n")
 
-    for ticket in tickets:
+    for ticket in ticketPool:
         print(ticket, '\n')
 
     print(won, " tickets have won the bet!")
